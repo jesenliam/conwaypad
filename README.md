@@ -1,7 +1,7 @@
 # ConwayPad — AI-Powered Token Launch Platform on Base
 
 <div align="center">
-  <img src="assets/logo.png" alt="ConwayPad Logo" width="320" />
+  <img src="assets/favicon.png" alt="ConwayPad Logo" width="320" />
   
   <br/>
   
