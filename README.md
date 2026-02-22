@@ -1,6 +1,27 @@
 # ConwayPad — AI-Powered Token Launch Platform on Base
 
-ConwayPad is a no-code token launch platform built on Base blockchain. It combines the Clanker SDK v4 for ERC-20 token deployment, Uniswap V3 for automatic liquidity, and an AI assistant powered by Conway's x402 pay-per-request inference protocol.
+<div align="center">
+  <img src="assets/logo.png" alt="ConwayPad Logo" width="320" />
+  
+  <br/>
+  
+  **Launch ERC-20 tokens on Base blockchain with AI assistance.**
+  
+  [![Website](https://img.shields.io/badge/Website-conwaypad.xyz-8B5CF6?style=for-the-badge)](https://conwaypad.xyz)
+  [![Base](https://img.shields.io/badge/Chain-Base%20Mainnet-0052FF?style=for-the-badge&logo=coinbase)](https://base.org)
+  [![Clanker](https://img.shields.io/badge/SDK-Clanker%20v4-10B981?style=for-the-badge)](https://clanker.world)
+  [![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
+</div>
+
+---
+
+## Screenshots
+
+### Dashboard
+![ConwayPad Dashboard](assets/screenshot-dashboard.png)
+
+### AI Chat Assistant
+![ConwayPad AI Chat](assets/screenshot-chat.png)
 
 ---
 
@@ -73,7 +94,7 @@ Conway uses a **pay-per-request** model — each AI inference request is paid in
 2. Conway API responds with `402 Payment Required` + payment details
 3. The agent wallet signs a micro-payment (~$0.000048 per request)
 4. Conway responds with a streaming AI completion
-5. If x402 fails (e.g. insufficient funds), the built-in knowledge base provides fallback answers
+5. If x402 fails, the built-in knowledge base provides fallback answers
 
 **Model:** `gpt-5-mini` at $0.000048/request  
 **Agent wallet:** Funds ~120,000+ AI requests per USDC
@@ -123,7 +144,7 @@ npm run db:push
 npm run dev
 ```
 
-Set your environment secrets in `.env` or via your hosting provider:
+Set your environment secrets:
 ```
 CONWAY_WALLET_PRIVATE_KEY=0x...
 SESSION_SECRET=your_secret
